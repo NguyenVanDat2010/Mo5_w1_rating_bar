@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rating-bar';
+  countDownMessage = '';
+
+  onRateChange(value){
+    console.log(value);
+  }
+
+  onCountDown(){
+    this.countDownMessage = "Ended!"
+  }
 }

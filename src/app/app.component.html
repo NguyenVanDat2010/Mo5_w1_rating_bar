@@ -1,1 +1,3 @@
-<app-rating-bar></app-rating-bar>
+<app-rating-bar [max]= "15" (rateChange) = "onRateChange($event)"></app-rating-bar>
+<app-countdown-timer [seconds]='15' (timerEnd) = 'onCountDown($event)'></app-countdown-timer>
+<p>{{countDownMessage}}</p>
